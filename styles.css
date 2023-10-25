@@ -1,40 +1,72 @@
-html, body {
-    min-height: 100% !important;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body{
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .display-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.container{
-    width: 50%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.display-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-.display {
-    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  
+  .display {
+    font-size: 1.5em;
     width: 100%;
+    height: 50px;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+  
+  .number-btn,
+  .operator-btn {
+    font-size: 1.2em;
+    width: 60px;
     height: 60px;
-}
-
-.buttons {
-    margin-top: 1em;
-}
+    margin: 5px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: white;
+    color: #007bff;
+  }
+  
+  .number-btn:hover,
+  .operator-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  @media (max-width: 576px) {
+    /* Small devices (576px and below) */
+    .number-btn,
+    .operator-btn {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .display {
+      height: 40px;
+    }
+  }

@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator App</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="display-container"> 
-            <span class="border border-dark rounded display"></span>
+        <h1 class="text-center mt-4">Calculator App</h1>
+        <div class="display-container mt-5">
+            <span class="display"></span>
         </div>
-        <div class="buttons d-grid gap-2 d-md-block">
-            <button class="btn btn-primary" id="clear">Clear</button>
-            <div>
-                <button class="btn btn-primary number-btn">7</button>
-                <button class="btn btn-primary number-btn">8</button>
-                <button class="btn btn-primary number-btn">9</button>
-                <button class="btn btn-primary operator-btn" id="divide">÷</button>
+        <div class="buttons">
+            <div class="row text-center  justify-content-center">
+                <button class="btn btn-primary col-6 col-md-2 mb-3" id="clear">Clear</button>
             </div>
-           <div>
-            <button class="btn btn-primary number-btn">4</button>
-            <button class="btn btn-primary number-btn">5</button>
-            <button class="btn btn-primary number-btn">6</button>
-            <button class="btn btn-primary operator-btn" id="multiply">×</button>
-           </div>
-           <div>
-            <button class="btn btn-primary number-btn">1</button>
-            <button class="btn btn-primary number-btn">2</button>
-            <button class="btn btn-primary number-btn">3</button>
-            <button class="btn btn-primary operator-btn" id="subtract">-</button>
-           </div>
-           <div>
-            <button class="btn btn-primary number-btn">0</button>
-            <button class="btn btn-primary number-btn">.</button>
-            <button class="btn btn-primary" id="equal">=</button>
-            <button class="btn btn-primary operator-btn" id="add">+</button>
-           </div>
+            <div class="row text-center  justify-content-center">
+                <button class="col-3 col-md-2 btn btn-primary number-btn">7</button>
+                <button class="col-3 col-md-2 btn btn-primary number-btn">8</button>
+                <button class="col-3 col-md-2 btn btn-primary number-btn">9</button>
+                <button class="col-3 col-md-2 btn btn-primary operator-btn" id="divide">÷</button>
+            </div>
+            <div class="row text-center  justify-content-center">
+                <button class="col-3 col-md-2 btn btn-primary number-btn">4</button>
+                <button class="col-3 col-md-2 btn btn-primary number-btn">5</button>
+                <button class="col-3 col-md-2 btn btn-primary number-btn">6</button>
+                <button class="col-3 col-md-2 btn btn-primary operator-btn" id="multiply">×</button>
+            </div>
+            <div class="row text-center  justify-content-center">
+                <button class="col-3 col-md-2 btn btn-primary number-btn">1</button>
+                <button class="col-3 col-md-2 btn btn-primary number-btn">2</button>
+                <button class="col-3 col-md-2 btn btn-primary number-btn">3</button>
+                <button class="col-3 col-md-2 btn btn-primary operator-btn" id="subtract">-</button>
+            </div>
+            <div class="row text-center  justify-content-center">
+                <button class="col-3 col-md-2 btn btn-primary number-btn">0</button>
+                <button class="col-3 col-md-2 btn btn-primary number-btn">.</button>
+                <button class="col-3 col-md-2 btn btn-primary" id="equal">=</button>
+                <button class="col-3 col-md-2 btn btn-primary operator-btn" id="add">+</button>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
